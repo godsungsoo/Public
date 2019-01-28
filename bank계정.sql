@@ -119,4 +119,5 @@ INSERT INTO TRANSACTION VALUES(2,'02-106', DEFAULT, 1, ' ',1000,0,1000);
 --INSERT INTO TRANSACTION VALUES(2,'02-106', DEFAULT, 1, ' ',1000,0,2000);
 --insert into transaction values((select DISTINCT user_no from transaction where account_no = '02-106'),'02-106',DEFAULT, 1, ' ',1000,0,3000);
 
+--select user_no, account_no, user_name, open_date, trans_date, from bankmanager join transaction using (user_no) join account using (account_no);
 commit;
